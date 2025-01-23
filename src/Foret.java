@@ -1,18 +1,19 @@
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+
 
 public class Foret {
     private int rows;
     private int cols;
     private Arbre[][] arbres;
 
-    public Foret(int rows, int cols) {
+
+    public Foret(int rows, int cols, List<Point> pointDeparts) {
         this.rows = rows;
         this.cols = cols;
         this.arbres = new Arbre[rows][cols];
-        initForet(Arrays.asList(new Point(4, 9), new Point(17, 6), new Point(13, 9)));
+        initForet(pointDeparts);
     }
 
     public void initForet(List<Point> feuDepart) {

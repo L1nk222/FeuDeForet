@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Feu {
 
-    private static final double probaFeu = Configuration.getProbaFeu();
+    private static double probaFeu = Configuration.getProbaFeu();
 
     public static void bruler(Foret foret) {
         System.out.println("Le feu se avance");
